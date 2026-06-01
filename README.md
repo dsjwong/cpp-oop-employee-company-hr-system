@@ -35,3 +35,17 @@ g++ -std=c++17 -o hr_system main.cpp employee.cpp company.cpp
 - Compute total payroll
 - List employees by department
 - Display formatted employee records
+
+## Building
+
+Requires a C++17-compatible compiler (GCC 9+ or Clang 10+).
+
+```bash
+# Compile
+g++ -std=c++17 -O2 -Wall -o main main.cpp
+
+# Or with CMake (if CMakeLists.txt is present)
+cmake -B build && cmake --build build
+```
+
+No external libraries required — standard library only.
